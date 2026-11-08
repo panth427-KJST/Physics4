@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>บทที่ 14 ไฟฟ้ากระแส — ฟิสิกส์ 4 ม.5</title>
+<meta name="theme-color" content="#0B1F3A">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600;700;800&family=Kanit:wght@500;600&family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;min-height:100vh;background:#F7F2E7;color:#123A63;font-family:'Sarabun',system-ui,sans-serif;font-size:17px;line-height:1.6;
+  display:flex;align-items:center;justify-content:center;padding:calc(env(safe-area-inset-top) + 20px) 16px calc(env(safe-area-inset-bottom) + 20px);}
+.box{width:100%;max-width:640px;background:#fff;border:1px solid #E6DCC8;border-radius:22px;overflow:hidden;
+  box-shadow:0 1px 2px rgba(11,31,58,.06),0 16px 40px -16px rgba(11,31,58,.3);}
+.art{aspect-ratio:5/3;background:#0B1F3A;} .art svg{width:100%;height:100%;display:block;}
+.body{padding:22px 24px 26px;}
+.num{font-family:'Kanit',sans-serif;font-weight:600;color:#1E6091;}
+h1{font-family:'Prompt',sans-serif;font-weight:800;font-size:clamp(2rem,7vw,2.6rem);margin:.1em 0 0;color:#0B1F3A;line-height:1.15;}
+.en{font-family:'Prompt',sans-serif;font-weight:600;color:#3BA3C7;}
+.soon{display:inline-block;margin:14px 0 6px;font-family:'Kanit',sans-serif;font-weight:600;font-size:.95rem;
+  padding:.3em .9em;border-radius:999px;background:#FCEBC4;color:#8A5A00;}
+ul{padding-left:1.2em;margin:.4em 0 1.2em;}
+a.back{display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#fff;background:#4A3410;
+  font-family:'Kanit',sans-serif;font-weight:600;padding:12px 16px;border-radius:14px;}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="art"><svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="bg14" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A2A10"/><stop offset="1" stop-color="#0B1F3A"/></linearGradient></defs><rect width="400" height="240" fill="url(#bg14)"/><path d="M70 60 H330 V190 H70 Z" fill="none" stroke="#E8D9B8" stroke-width="3"/><rect x="59" y="108" width="22" height="34" fill="#2A1E0C"/><line x1="54" y1="118" x2="86" y2="118" stroke="#F4B740" stroke-width="3"/><line x1="61" y1="132" x2="79" y2="132" stroke="#F4B740" stroke-width="5"/><rect x="135" y="48" width="46" height="24" fill="#2A1E0C"/><path d="M135.0,60.0 L141.0,51.0 L149.0,69.0 L157.0,51.0 L165.0,69.0 L173.0,51.0 L181.0,60.0" fill="none" stroke="#E8654A" stroke-width="2.6"/><rect x="225" y="48" width="46" height="24" fill="#2A1E0C"/><path d="M225.0,60.0 L231.0,51.0 L239.0,69.0 L247.0,51.0 L255.0,69.0 L263.0,51.0 L271.0,60.0" fill="none" stroke="#E8654A" stroke-width="2.6"/><circle cx="330" cy="125" r="16" fill="#2A1E0C" stroke="#F4B740" stroke-width="2.6"/><path d="M326 121 l8 8 M334 121 l-8 8" stroke="#F4B740" stroke-width="2"/><line x1="352.0" y1="125.0" x2="360.0" y2="125.0" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="345.6" y1="140.6" x2="351.2" y2="146.2" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="330.0" y1="147.0" x2="330.0" y2="155.0" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="314.4" y1="140.6" x2="308.8" y2="146.2" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="308.0" y1="125.0" x2="300.0" y2="125.0" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="314.4" y1="109.4" x2="308.8" y2="103.8" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="330.0" y1="103.0" x2="330.0" y2="95.0" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><line x1="345.6" y1="109.4" x2="351.2" y2="103.8" stroke="#F4B740" stroke-width="1.6" opacity=".55"/><circle cx="79.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="109.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="139.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="169.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="199.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="229.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="259.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="289.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="319.0" cy="190.0" r="3.4" fill="#7FD8E8"/><circle cx="330.0" cy="171.0" r="3.4" fill="#7FD8E8"/><circle cx="330.0" cy="81.0" r="3.4" fill="#7FD8E8"/><circle cx="321.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="291.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="261.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="231.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="201.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="171.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="141.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="111.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="81.0" cy="60.0" r="3.4" fill="#7FD8E8"/><circle cx="70.0" cy="79.0" r="3.4" fill="#7FD8E8"/><circle cx="70.0" cy="169.0" r="3.4" fill="#7FD8E8"/><path d="M190 34 h40" stroke="#F4B740" stroke-width="2.4"/><path d="M236 34 l-9 -5 v10 z" fill="#F4B740"/><text x="182" y="39" fill="#F4B740" font-family="Prompt, sans-serif" font-weight="700" font-size="15" text-anchor="end">I</text></svg></div>
+  <div class="body">
+    <div class="num">บทที่ 14</div>
+    <h1>ไฟฟ้ากระแส</h1>
+    <div class="en">Current Electricity</div>
+    <span class="soon">กำลังจัดทำ</span>
+    <p>หัวข้อที่จะมีในบทนี้</p>
+    <ul><li>กระแสไฟฟ้า</li><li>กฎของโอห์มและความต้านทาน</li><li>พลังงานไฟฟ้าและกำลังไฟฟ้า</li><li>แบตเตอรี่และวงจรไฟฟ้ากระแสตรง</li><li>พลังงานทดแทนและเทคโนโลยีด้านพลังงาน</li></ul>
+    <a class="back" href="../">← กลับหน้ารวมบทเรียน <span>⌂</span></a>
+  </div>
+</div>
+</body>
+</html>
